@@ -1,0 +1,218 @@
+🟢 Level 1 — Understanding the Basics
+Exercise 1 — List of Names
+
+You have:
+
+names = ["Petar", "Ivan", "Maria", "Georgi", "Anna"]
+
+Use `for` to print each name on a separate line.
+
+Do not use `while`.
+
+Exercise 2 — Favorite Games 🎮
+games = ["Minecraft", "GTA V", "Hogwarts Legacy", "CS2", "WWE 2K16"]
+
+Use `for` to print:
+
+I like Minecraft
+I like GTA V
+...
+
+💡 Use an f-string.
+
+Exercise 3 — Numbers
+
+You have:
+
+numbers = [5, 10, 15, 20, 25]
+
+Use `for` to print each number.
+
+Then create a second version that prints:
+
+Number: 5
+Number: 10
+...
+Exercise 4 — Sum
+
+You have:
+
+numbers = [10, 20, 30, 40, 50]
+
+Find the sum using `for`.
+
+Expected result:
+
+Total: 150
+
+💡 Here, use the `total` concept you already learned with `while`.
+
+🟡 Level 2 — `for` + Conditions
+Exercise 5 — Even Numbers
+
+You have:
+
+numbers = [1, 4, 7, 10, 13, 16, 20]
+
+Use `for` + `if` to print only the even numbers. Expected output:
+
+4
+10
+16
+20
+Exercise 6 — Positive and negative
+
+You have:
+
+numbers = [5, -3, 10, -8, 0, 15, -2]
+
+Using `for` and `if`/`elif`/`else`, determine the status of each number:
+
+5 → Positive
+-3 → Negative
+0 → Zero
+Exercise 7 — Largest number
+
+You have:
+
+numbers = [12, 45, 7, 89, 23, 56]
+
+Find the largest number using a `for` loop.
+
+⚠️ Do not use `max()` for this exercise.
+
+Here, you will need to devise the logic for keeping track of the current largest value.
+
+🟠 Level 3 — `range()`
+
+This introduces one of the most important aspects of the `for` loop. for i in range(5):
+print(i)
+
+The result is:
+
+0
+1
+2
+3
+4
+
+Important: range(5) goes up to 5 but does not include 5.
+
+Exercise 8 — 1 to 10
+
+Use:
+
+range()
+
+and print:
+
+1
+2
+3
+...
+10
+
+Exercise 9 — Even numbers
+
+Using `for` + `range()`, print the even numbers from 2 to 20.
+
+2
+4
+6
+...
+20
+
+💡 Here, `range()` can take three values:
+
+range(start, stop, step)
+
+Exercise 10 — Multiplication table
+
+The user enters a number:
+
+Enter a number: 7
+
+The program prints:
+
+7 x 1 = 7
+7 x 2 = 14
+...
+7 x 10 = 70
+
+Here you will combine:
+
+input() + int() + for + range() + f-string
+
+🔴 Level 4 — Real practice
+
+Exercise 11 — Count vowels
+
+You have:
+
+word = "programming"
+
+Use `for` to count how many vowels the word has.
+
+Vowels:
+
+a, e, i, o, u
+
+Expected result:
+
+Vowels: 3
+
+💡 You will need a counter:
+
+count = 0
+
+Exercise 12 — Student grades 🎓
+
+You have:
+
+grades = [6, 5, 4, 3, 6, 5, 2]
+
+Use `for` to:
+
+Calculate the average grade. Count the number of grades equal to 6.
+Count the number of grades below 4.
+
+Expected format:
+
+Average grade: ...
+Excellent grades: ...
+Grades below 4: ...
+🔥 Final exercise — for the Challenge
+Exercise 13 — Store Inventory
+
+This is a small, real-world task.
+
+You have:
+
+products = ["Laptop", "Mouse", "Keyboard", "Monitor", "Headphones"]
+prices = [1200, 50, 100, 500, 150]
+
+Display them like this:
+
+Laptop - 1200
+Mouse - 50
+Keyboard - 100
+Monitor - 500
+Headphones - 150
+
+Then find:
+
+the total value of all products;
+the most expensive product;
+how many products cost more than 100.
+⭐ Bonus
+
+Format the output like this:
+
+1. Laptop - 1200
+2. Mouse - 50
+3. Keyboard - 100
+...
+
+Here you can use something you encountered earlier:
+
+enumeration ()

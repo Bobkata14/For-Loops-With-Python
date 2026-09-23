@@ -1,0 +1,134 @@
+Mini Project: Game Library Analyzer
+
+You will create a program that analyzes your game library.
+
+Data:
+games = ["Minecraft", "GTA V", "Hogwarts Legacy", "CS2", "WWE 2K16", "The Witcher 3"]
+ratings = [10, 9, 9.2, 8.5, 9.5, 9]
+
+Each element in `games` corresponds to the rating at the same index in `ratings`.
+
+For example:
+
+Minecraft → 10
+GTA V → 9
+Hogwarts Legacy → 9.2
+🟢 Part 1 — Display the library
+
+Use a `for` loop to output:
+
+Minecraft - 10/10
+GTA V - 9/10
+Hogwarts Legacy - 9.2/10
+...
+
+💡 Here, I want you to use `enumerate()`.
+
+🟢 Part 2 — Average rating
+
+Use a `for` loop to calculate the average rating.
+
+You should have a variable like this:
+
+total = 0
+
+and gradually add the ratings:
+
+total → rating → total → next rating → ...
+
+Finally:
+
+Average rating: X
+
+❗ Do not use `sum()`.
+
+🟡 Part 3 — Highest-rated game
+
+Find:
+
+the highest rating
+the name of the game
+
+❗ Do not use `max()`.
+
+You need to apply the exact logic from Task #7:
+
+largest = ...
+↓
+for
+↓
+if current rating > largest
+↓
+largest changes
+
+But this time, you also need to store the name of the game. 🟡 Part 4 — Categories
+
+Use a `for` loop combined with `if`/`elif`/`else` to categorize the games:
+
+10 → Masterpiece
+9–9.9 → Excellent
+8–8.9 → Good
+Below 8 → Average
+
+For example:
+
+Minecraft - Masterpiece
+GTA V - Excellent
+...
+
+Then, create counters:
+
+masterpiece_count = 0
+excellent_count = 0
+good_count = 0
+average_count = 0
+
+And increment them using `+= 1`.
+
+🟠 Part 5 — Games above a certain rating
+
+Ask the user to enter a rating:
+
+minimum_rating = float(input("Show games rated at least: "))
+
+Then, use a `for` loop to display only the games with a rating equal to or higher than that value.
+
+For example:
+
+Show games rated at least: 9
+
+Games:
+Minecraft - 10
+GTA V - 9
+Hogwarts Legacy - 9.2
+WWE 2K16 - 9.5
+The Witcher 3 - 9
+🔴 Part 6 — Game Statistics
+
+Finally, generate statistics:
+
+===== GAME LIBRARY =====
+
+Games: 6
+Average rating: 9.27
+Highest rated: Minecraft - 10
+Masterpiece: 1
+Excellent: 4
+Good: 1
+Average: 0
+
+Here, you should use the results you have already calculated.
+
+⭐ BONUS — range()
+
+Create a separate section:
+
+===== TOP 3 =====
+
+1. ...
+2. ...
+3. ...
+
+Use `range()`.
+
+You don't need to automatically find the actual Top 3 — initially, you can simply use the first three games to practice using `range()`.
